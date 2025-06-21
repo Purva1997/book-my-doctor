@@ -24,6 +24,7 @@ Create a `.env` file in the root directory with the following variables:
 ```env
 REACT_APP_BACKEND_URL=http://localhost:4000
 REACT_APP_RAZORPAY_KEY_ID=your_razorpay_key_id
+REACT_APP_ADMIN_URL=http://localhost:3001
 ```
 
 ## Installation

@@ -6,8 +6,7 @@ import { DoctorContext } from "../context/DoctorContext";
 const Navbar = () => {
   const { aToken, setAToken } = useContext(AdminContext);
   const { dToken, setDToken } = useContext(DoctorContext);
-  const backendUrl = import.meta?.env?.VITE_ADMIN_URL;
-  console.log('backendUrl', backendUrl);
+  const backendUrl = import.meta?.env?.VITE_ADMIN_URL || "http://localhost:3001";
   const navigate = useNavigate();
   const logout = () => {
     navigate("/");

@@ -4,11 +4,13 @@ A comprehensive healthcare appointment management system built with the MERN sta
 
 ## Project Structure
 
-This is a monorepo containing three main modules: 
+The project consists of three independent applications:
 
 - `admin/` - Admin dashboard for managing doctors and appointments
 - `frontend/` - Patient-facing web application
 - `backend/` - Node.js/Express API server
+
+Each directory contains its own package.json and README with specific setup instructions.
 
 ## Getting Started
 
@@ -18,7 +20,7 @@ This is a monorepo containing three main modules:
 - MongoDB
 - npm or yarn
 
-### Installation
+### Setup Instructions
 
 1. Clone the repository:
 ```bash
@@ -26,32 +28,24 @@ git clone https://github.com/Purva1997/book-my-doctor.git
 cd book-my-doctor
 ```
 
-2. Install dependencies for all modules:
+2. For setting up individual applications, navigate to their respective directories and follow the README instructions:
+
+#### Backend Setup
 ```bash
-npm run install:all
+cd backend
+# Follow instructions in backend/README.md
 ```
 
-3. Create `.env` files in each module directory based on the provided `.env.example` files.
-
-### Development
-
-To run all modules in development mode:
+#### Frontend Setup
 ```bash
-npm run dev
+cd frontend
+# Follow instructions in frontend/README.md
 ```
 
-To run individual modules:
+#### Admin Dashboard Setup
 ```bash
-npm run admin    # Run admin dashboard
-npm run frontend # Run frontend
-npm run backend  # Run backend
-```
-
-### Building
-
-To build all modules:
-```bash
-npm run build:all
+cd admin
+# Follow instructions in admin/README.md
 ```
 
 ## Contributing
